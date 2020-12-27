@@ -63,7 +63,6 @@
         clear: both;
         padding-top: 80px;
         position: relative;
-        border-bottom: 1px solid #222;
     }
 
     #profile {
@@ -103,6 +102,32 @@
         line-height: 1.5;
         padding: 0 0 0 2%;
     }
+
+    
+    article.notice{
+        border-bottom: 1px solid #222;
+    }
+
+ 
+
+    .h_img img {
+        width: 180px;
+        border-radius: 50%;
+        border: 1px solid #333;
+        padding: 3px;
+        margin: 12px;
+    }
+
+    article.notice ul.pa{
+        display: flex;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    article.notice ul.pa span{
+        font-size: 18px;
+    }
+
 
     .p_btn {
         display: flex;
@@ -163,7 +188,7 @@
 
     .tab_wrap label {
         font-size: 20px;
-        padding: 10px 126px;
+        padding: 10px 127px;
         cursor: pointer;
     }
 
@@ -205,21 +230,30 @@
     padding-top: 20px;
    }
 
+   ul.ibtn>li:nth-child(1) ul.sub,
+   ul.ibtn>li:nth-child(2) ul.sub,
+   ul.ibtn>li:nth-child(3) ul.sub{
+    margin-top: 20px;
+   }
+
+   ul.ibtn>li{position: relative;}
+   .ibtn .sub{
+       width: 325px;
+       height: 324px;
+       background:rgba(0,0,0,.7);
+       color:#fff;
+       position: absolute;
+        left:4px;top: 4px;
+        opacity: 0;
+        transition: 0.5s;
+   }
+
+   .ibtn>li:hover ul.sub{
+       opacity: 1;
+   }
+
 
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:999px) {}
